@@ -1,0 +1,29 @@
+# Project Setup
+
+- create project in firebase
+- click on add a webapp
+  - add a nickname for the app
+  - click on register app
+  - install firebase and copy the initialization code to `main.js` file
+  - click on continue to console
+- click on authentication
+  - click on get started
+  - click on google under additional providers
+  - click on enable
+  - give a proper name for the app
+  - click on save
+- go back to project overview and click on firestore
+  - click on create database
+  - select on start in production mode and click next
+  - select any location preferably a location which is closer to you geographically and click on enable
+  - click on start collection and give a collection name
+  - give click on the auto id option and give at least one field, then click on save.
+- click on the gear icon next to project overview
+  - select service accounts tab
+  - click on the generate a new private key button
+  - read what they have written and click on the generate key in the window
+  - save the json file in your system. 
+    - this is like the password and gives anyone with this file, access to your firebase account 
+    - so manage it like a secret and never include this in the source code
+    - also never include this in the repository if you push it to github/bitbucket like providers
+    - we will use this in the backend

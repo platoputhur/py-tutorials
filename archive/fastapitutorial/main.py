@@ -11,6 +11,11 @@ items: list[Item] = [
 ]
 
 
+@app.get("/")
+def status() -> dict:
+    return {"status": "ok"}
+
+
 @app.get("/items")
 def get_all_items() -> list[Item]:
     return items
